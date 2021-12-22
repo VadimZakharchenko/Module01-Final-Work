@@ -1,0 +1,212 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    max-width: 1820px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 49px 10px 0px;
+}
+
+.header-item {
+    max-width: 810px;
+    display: flex;
+    justify-content: space-between;
+    gap: 240px;
+}
+
+.header-logo {
+    background-image: url(../images/logo.svg);
+    width: 97px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 54px;
+    padding-left: 0;
+    margin-top: 8px;
+    list-style-type: none;
+}
+
+.header-nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #2B3541;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-left: 0;
+    list-style-type: none;
+    margin-top: 0px;
+}
+
+.socials-inst {
+    background-image: url(../images/in.svg);
+    width: 30px;
+    height: 30px;
+}
+
+.socials-fb {
+    background-image: url(../images/fb.svg);
+    width: 30px;
+    height: 30px;
+}
+
+.banner {
+    max-width: 1330px;
+    height: 852px;
+    margin: 0 205px 142px 390px;
+}
+
+.banner-content {
+    color: #2B3541;
+    background-image: url(../images/girl.png);
+    background-repeat: no-repeat;
+    height: 852px;
+    background-size: auto;
+    background-position-x: 329px;
+    background-position-y: -20px;
+}
+
+.banner-title {
+    position: relative;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    max-width: 676px;
+    top: 213px;
+    letter-spacing: 0.03em;
+}
+
+.banner-subtitle {
+    font-size: 40px;
+    top: 229px;
+    position: relative;
+    max-width: 427px;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+}
+
+.banner-text {
+    font-size: 18px;
+    position: relative;
+    top: 221px;
+    max-width: 330px;
+    margin-left: 92px;
+    line-height: 24px;
+}
+
+.banner-link {
+    position: relative;
+    padding: 22px 30px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase; 
+    text-decoration: none;
+    color: #2B3541;
+    background-color: #FBF138;
+    top: 251px;
+    margin-left: 91px;
+}
+
+.banner-arrow {
+    position: relative;
+    background-image: url(../images/arrow.svg);
+    width: 52px;
+    height: 55px;
+    border: none;
+    background-color: floralwhite;
+    top: 485px;
+    right: 256px;
+}
+
+.container {
+    max-width: 1143px;
+    margin: 0 357px 0 401px;    
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu-events {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-events h3 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #2B3541;
+    margin: 0;
+}
+
+.events {
+    display: flex;
+    justify-content: space-between;
+    height: 603px;
+    gap: 20px;
+    margin-bottom: 160px;
+}
+
+.events-wrap {
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.events-wrap_endurance {
+    background-image: url(../images/hammer.jpg);
+}
+
+.events-wrap_trainer {
+    background-image: url(../images/whips.jpg);
+}
+
+.events-wrap_yoga {
+    background-image: url(../images/yoga.jpg);
+}
+
+.events-link-notv {
+    display: none;
+}
+
+.events-date {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 34px 0 28px 30px;
+    color: #2B3541;
+}
+
+.events-wrap h4 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2B3541;
+    margin: 0 20px 40px 31px;
+}
+
+.events-link {
+    background-color: #FBF138;
+    color: #2B3541;
+    text-decoration: none;
+    padding: 14px 21px;
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+}
+
