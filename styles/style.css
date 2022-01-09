@@ -2,6 +2,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: #2B3541;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -73,10 +74,6 @@ a {
     width: 97px;
     height: 30px;
 }
-/*
-.logo-image:hover {
-    transform: scale(1.011);
-}*/
 
 .header-nav {
     display: flex;
@@ -84,10 +81,6 @@ a {
     padding-left: 0;
     gap: 55px;
 }
-/*
-.header-nav li:hover {
-    transform: scale(1.04);
-}*/
 
 .header-nav a {
     text-decoration: none;
@@ -96,11 +89,11 @@ a {
     line-height: 150%;
     color: #2B3541;
 }
-/*
+
 .header-nav a:hover {
     border-bottom: 1px solid #2B3541;
     padding-bottom: 12px;
-}*/
+}
 
 .socials {
     display: flex;
@@ -114,10 +107,10 @@ a {
     width: 30px;
     height: 30px;
 }
-/*
+
 .socials-inst:hover {
     transform: scale(1.2666);
-}*/
+}
 
 .socials-fb {
     display: block;
@@ -126,10 +119,10 @@ a {
     width: 30px;
     height: 30px;
 }
-/*
+
 .socials-fb:hover {
     transform: scale(1.2666);
-*/
+}
 
 /* BANNER */
 .banner {
@@ -175,10 +168,11 @@ a {
     margin-left: 92px;
 }
 
-/*.banner-link:hover {
+.banner-link:hover {
     background-color: #1E2F40;
     color: #FBF138;
-    transition: 0.2s;*/
+    transition: 0.2s;
+}
 
 .banner-arrow {
     display: block;
@@ -191,6 +185,11 @@ a {
     margin-top: 200px;
     cursor: pointer;
     outline: none;
+    transition: 0.8s;
+}
+
+.banner-arrow:hover {
+    transform: scale(1.2);
 }
 
 .bg {
@@ -459,3 +458,391 @@ a {
     padding-top: 4px;
 }
 
+/* SUBSCRIBE */
+.subscribe {
+    background-color: #F3F3F3;
+    margin-bottom: 160px;
+}
+
+.subscribe-box {
+    max-width: 590px;
+    margin: 0 auto;
+    padding: 82px 0 82px;
+}
+
+.subscribe-title {
+    text-align: center;
+    padding-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.subscribe-title::before {
+    position: absolute;
+    content: " ";
+    top: -15px;
+    left: -25px;
+    height: 53px;
+    width: 53px;
+    background-color: #FBF138;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+    border-radius: 100%;
+    z-index: -1;
+}
+
+.subscribe-email {
+    padding: 22px 120px 22px 20px;
+    font-size: 18px;
+    border: none;
+    margin: 0 auto;
+}
+
+.subscribe-btn {
+    padding: 21px 46px;
+    background-color: #FBF138;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #2B3541;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: .2s ease background-color, .2s ease color;
+}
+
+.subscribe-btn:hover {
+    background-color: #2B3541;
+    color: #FBF138;
+}
+
+.subscribe-form {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 14px;
+    margin-left: -4px;
+}
+
+.subscribe-label {
+    display: flex;
+    align-items: center;
+    margin-left: -8px;
+}
+
+.subscribe-checkbox:checked,
+.subscribe-checkbox:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.subscribe-checkbox:checked + label,
+.subscribe-checkbox:not(:checked) + label{
+   position: relative;
+   padding-left: 25px;
+   cursor:pointer;
+   margin-left: 2px;
+}
+
+.subscribe-checkbox:checked + label::before{
+    content:'';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left:0;
+    top:calc(50% - 10px);
+    background-image: url("../images/check_box1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ }
+
+ .subscribe-checkbox:not(:checked) + label::before{
+    content:'';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left:0;
+    top:calc(50% - 10px);
+    background-image: url("../images/checkbox.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ .radio:checked + label::before{
+    border-radius: 100%;
+ }
+
+.subscribe-label-text {
+    font-size: 11px;
+    line-height: 150%;
+    font-weight: 400;
+    text-align: left;
+    color: #8F949A;
+    margin: 0 auto;
+}
+
+.text-opacity,
+.link-opacity {
+    opacity: 0.5;
+}
+
+.subscribe-label-text a {
+    font-size: 11px;
+    line-height: 150%;
+    font-weight: 400;
+    color: #8F949A;
+    text-decoration-line: none;
+    border-bottom: 1px #8F949A solid;
+    transition: .2s ease color, .2s ease border-bottom;
+}
+
+.subscribe-label-text a:hover {
+    color: #2B3541;
+    border-bottom: 1px #2B3541 solid;
+}
+
+/* COMPANY */
+.company {
+    margin-bottom: 170px;
+}
+
+.company p {
+    margin: 0;
+}
+ 
+.company-content {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    justify-content: space-between;
+}
+ 
+.company-wrapper {
+    display: flex;
+    gap: 77px;
+    justify-content: space-between;
+}
+ 
+.company-wrapper-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+ 
+.company-wrapper-text {
+    font-size: 18px;
+    line-height: 150%;
+    max-width: 87vh;
+}
+ 
+ 
+.company-wrapper-btn {
+    display: inline-block;
+    background: #FBF138;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+    margin-top: 34px;
+    padding: 20px 55px;
+    text-transform: uppercase;
+}
+
+.company-wrapper-btn:hover {
+    background-color: #2B3541;
+    color: #FBF138
+}
+ 
+.company-wrapper-img {
+    width: 100%;
+    height: 336px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
+ 
+}
+ 
+.company-wrapper-img img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 336px;
+    opacity: .8;
+}
+ 
+.company-box {
+    display: flex;
+    gap: 47px;
+    justify-content: space-between;
+}
+
+.company-box-item:nth-child(2) {
+    flex: 0 0 301px;
+}
+
+.company-box-item:nth-child(3) {
+    flex: 0 0 246px;
+}
+
+.company-box-item:last-child {
+    flex: 0 0 202px;
+}
+ 
+ 
+.company-box-title {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    line-height: 125%;
+    font-size: 18px;
+    font-weight: 700;
+    
+}
+ 
+.company-box-para {
+    color: rgba(43, 53, 65, .6);
+}
+ 
+ 
+/* FOOTER */
+ 
+ 
+.footer {
+    background: #F3F3F3;
+}
+
+.footer-header {
+    padding-top: 39px;
+    padding-bottom: 18px;
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+}
+
+.footer-item nav {
+    flex-basis: 92%;
+}
+
+.footer-logo {
+    flex-basis: 23.1%;
+}
+
+.footer-logo-image {
+    display: block;
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    width: 97px;
+    height: 30px;
+}
+
+.footer-header-nav {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    gap: 90px;
+}
+
+.footer-header-nav a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.footer-mail {
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    margin-right: 27px;
+    color: #2B3541;
+}
+ 
+.footer-mail::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: #FBF138;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+    position: absolute;
+    left: -19px;
+    top: -12px;
+    z-index: -1;
+}
+
+.footer-header-nav a:hover {
+    border-bottom: 1px solid #2B3541;
+    padding-bottom: 12px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-socials-inst {
+    display: block;
+    background-image: url(../images/in.svg);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.footer-socials-inst:hover {
+    transform: scale(1.2666);
+}
+
+.footer-socials-fb {
+    display: block;
+    background-image: url(../images/fb.svg);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.footer-socials-fb:hover {
+    transform: scale(1.2666);
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.footer-item,
+.footer-link {
+    font-size: 14px;
+    color: rgba(43, 53, 65, .3);
+}
+ 
+.footer-link:hover {
+    color: #2B3541;
+}
+
+/* КНОПКА "НАВЕРХ" */
+.button-up {
+    background: url(../images/arrow-up.png) no-repeat center / cover;
+    width: 32px;
+    height: 32px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: 0.8s;
+ }
+ 
+ .button-up:hover {
+    transform: scale(1.26);
+ }
+ 
+ .button-up.hidden {
+    opacity: 0;
+ }
+ 
+ .button-up.visible {
+    opacity: 1;
+ }
+ 

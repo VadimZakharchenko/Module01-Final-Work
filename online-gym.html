@@ -21,7 +21,7 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    <header>
+    <header id="headerTop">
         <div class="container">
             <div class="header">
                 <div class="header-item">
@@ -62,7 +62,7 @@
                         </p>
                         <a class="banner-link" href="#timetable">узнать подробнее</a>
                     </div>
-                    <button class="banner-arrow"><a href="#marathon"></a></button>
+                    <button class="banner-arrow" href="#timetable"></button>
                 </div>
                 <div class="bg">
                     <div class="bg-gradient-left"></div>
@@ -164,64 +164,106 @@
                 </div>
             </div>
         </section>
-        <section>
-        </section>
-        <section>
-            <div class="containner">
-                <div>
-                    <div>
-                        <h3>О компании</h3>
-                        <p>Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с нами и вы сами увидите, что мы проводим не только онлайн-тренировки.</p>
-                        <a href="#">Записаться</a>
-                    </div>
-                    <div></div>
-                </div>
-                <div>
-                    <div>
-                        <h4>Экономия времени </h4>
-                        <p>Не нужно тратить время на дорогу</p>
-                    </div>
-                    <div>
-                        <h4>Индивидуальный подход</h4>
-                        <p>Внимание тренера пренадлежит только вам</p>
-                    </div>
-                    <div>
-                        <h4>Экономия денег</h4>
-                        <p>Средняя цена одной тренировки - 700₽</p>
-                    </div>
-                    <div>
-                        <h4>Опытный персонал</h4>
-                        <p>Стаж работы у наших тренеров от 5 лет</p>
-                    </div>
+        <section class="subscribe">
+            <div class="container">
+                <div class="subscribe-box">
+                    <h3 class="subscribe-title">
+                        Подпишитесь на рассылку
+                    </h3>
+                    <form>
+                        <div class="subscribe-form">
+                            <input class="subscribe-email" type="email" name="email" placeholder="Ваш e-mail" required>
+                            <input class="subscribe-btn" type="submit" name="submit" id="submit" value="Подписаться">
+                        </div>
+                        <div class="subscribe-label">
+                            <input class="subscribe-checkbox" type="checkbox" id="01">
+                            <label class="subscribe-label-text" for="01"><span class="text-opacity">Согласен с обработкой</span><a class="link-opacity" href="#" target="_blank"> персональных данных</a></label>
+                        </div>
+                        <!--<input type="submit" name="submit" id="submit-mobile" value="Подписаться" class="subscribe-btn-mobile">-->
+                    </form>
                 </div>
             </div>
         </section>
+        <section class="company">
+            <div class="container">
+               <div class="company-content">
+                  <div class="company-wrapper">
+                     <div class="company-wrapper-description">
+                        <h2 class="company-wrapper-title">О компании</h2>
+                        <p class="company-wrapper-text">
+                           Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь
+                           с&nbsp;нами
+                           и вы сами увидите, что мы проводим не&nbsp;только онлайн-тренировки.
+                        </p>
+                        <a class="company-wrapper-btn" onclick="openModal()">записаться</a>
+                     </div>
+                     <div class="company-wrapper-img">
+                        <img src="images/trainer.png" alt="Тренировка">
+                     </div>
+                  </div>
+                  <div class="company-box">
+                     <div class="company-box-item">
+                        <h5 class="company-box-title">Экономия времени</h5>
+                        <p class="company-box-para">
+                           Не нужно тратить время на дорогу
+                        </p>
+                     </div>
+                     <div class="company-box-item">
+                        <h5 class="company-box-title">Индивидуальный подход</h5>
+                        <p class="company-box-para">
+                           Внимание тренера пренадлежит только вам
+                        </p>
+                     </div>
+                     <div class="company-box-item">
+                        <h5 class="company-box-title">Экономия денег</h5>
+                        <p class="company-box-para">
+                           Средняя цена одной тренировки - 700₽
+                        </p>
+                     </div>
+                     <div class="company-box-item">
+                        <h5 class="company-box-title">Опытный персонал</h5>
+                        <p class="company-box-para">
+                           Стаж работы у наших тренеров от 5 лет
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <div class="footer-item">
-                <a href="#" class="footer-logo"></a>
-                <nav>
-                    <ul class="footer-nav">
-                        <li><a href="#">Мероприятия</a></li>
-                        <li><a href="#">Расписание</a></li>
-                        <li><a href="#">О компании</a></li>
-                    </ul>
-                </nav>
+            <div class="footer-header">
+                <div class="footer-item">
+                    <div class="footer-logo">
+                        <a href="#" class="footer-logo-image"></a>
+                    </div>
+                    <nav>
+                        <ul class="footer-header-nav">
+                            <li><a href="#">Мероприятия</a></li>
+                            <li><a href="#">Расписание</a></li>
+                            <li><a href="#">О компании</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer-socials">
+                        <a href="mailto:info@freefit.com" class="footer-mail">info@freefit.com</a>
+                        <a href="#" class="footer-socials-inst"></a>
+                        <a href="#" class="footer-socials-fb"></a>
+                    </div>
+                </div>
             </div>
-            <div>
-                <span></span>
-                <p></p>
-                <ul class="socials">
-                    <li><a class="socials-inst" href="#"></a></li>
-                    <li><a class="socials-fb" href="#"></a></li>
-                </ul>
-            </div>
-            <div>
-                <p>© 2020, Все права защищены</p>
-                <p>Сделано в рамках курса учебной платформы <a href="#">Frontend Blok</a></p>
-            </div>
+           <div class="footer-wrapper">
+              <div class="footer-item">
+                 © 2020, Все права защищены
+              </div>
+              <div class="footer-item">
+                 Сделано в рамках курса учебной платформы <a href="#" class="footer-link">Annblok</a>
+              </div>
+           </div>
         </div>
-    </footer>
+     </footer>
+     <!-- КНОПКА "НАВЕРХ" -->
+     <a href="#headerTop" class="button-up hidden" id="btnUp"></a>
+     <script src="main.js"></script>
 </body>
 </html>
