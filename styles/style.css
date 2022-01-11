@@ -208,21 +208,22 @@ a {
     height: 850px;
     background-image: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
     opacity: 0.2;
- }
+}
 
- .bg-gradient-right {
+.bg-gradient-right {
     flex-basis: 30%;
     background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
     opacity: 0.2;
- }
+}
 
- .bg-img {
+.bg-img {
     height: 805px;
     position: absolute;
     top: 40px;
     right: -95px;
- }
+}
 
+/* EVENTS */
 .menu-events {
     margin-bottom: 40px;
     display: flex;
@@ -823,7 +824,7 @@ a {
     color: #2B3541;
 }
 
-/* КНОПКА "НАВЕРХ" */
+/* BUTTON UP */
 .button-up {
     background: url(../images/arrow-up.png) no-repeat center / cover;
     width: 32px;
@@ -832,17 +833,156 @@ a {
     bottom: 20px;
     right: 20px;
     transition: 0.8s;
- }
+}
  
- .button-up:hover {
+.button-up:hover {
     transform: scale(1.26);
- }
+}
  
- .button-up.hidden {
+.button-up.hidden {
     opacity: 0;
- }
+}
  
- .button-up.visible {
+.button-up.visible {
     opacity: 1;
- }
+}
  
+/*POP UP*/
+.popup-bg {
+    background-color: rgba(43, 53, 65, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0; 
+    pointer-events: none;
+    transition: 0.5s all;
+}
+
+.popup-bg.active {
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.5s all;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 600px;
+    height: 577px;
+    transform: translate(-50%, -50%) scale(0);
+    background-color: #F3F3F3;
+    text-align: center;
+    transition: 0.5s all;
+}
+
+.popup.active {
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.5s all;
+}
+
+.popup-title {
+    margin: 63px 90px 19px 90px;
+    position: relative;
+    z-index: 1;
+    max-width: 420px;
+    line-height: 125%;
+}
+
+.popup-title::before {
+    content: '';
+    background-color: #FBF138;
+    border-radius: 100%;
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    bottom: 48px;
+    left: 36px;
+    z-index: -1;
+    box-shadow: 0px 13px 24px rgb(251 241 56 / .3);
+}
+
+.popup-text {
+    max-width: 345px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+.form-popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    max-width: 498px;
+    margin: 0 auto;
+}
+
+.form-popup input {
+    padding: 24px 25px;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.form-popup input::placeholder {
+    font-size: 18px;
+    color: #2B3541;
+    opacity: 0.3;
+}
+
+.form-popup input:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+.form-button {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #FBF138;
+    padding: 23px;
+    letter-spacing: 0.03em;
+    box-shadow: 0px 11px 28px -15px #fbf138;
+    transition: .5s all;
+    border: none;
+}
+
+.form-button:hover {
+    background-color: #2B3541;
+    color: #FBF138;
+    box-shadow: 0px 13px 24px rgba(43, 53, 65, 0.2);
+}
+
+.close-popup {
+    background-image: url(../images/close.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    top: 30px;
+    right: 30px;
+}
+
+.close-popup:hover {
+    background-image: url(../images/close-red.svg);
+    width: 24px;
+    height: 24px;
+}
+
+/* ADAPTIV */
+@media (max-width: 1495px) {
+    .bg-img {
+        right: 30px;
+    }
+}
+
+@media (max-width: 1200px) {
+    
+}
