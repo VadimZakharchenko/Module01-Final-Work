@@ -28,9 +28,9 @@
                     <div class="header-logo">
                         <a href="#" class="logo-image"></a>
                     </div>
-                    <!--<div class="header-burger">
+                    <div class="header-burger">
                         <button class="burger" onclick="openModal()"></button>
-                    </div>-->
+                    </div>
                     <nav>
                         <ul class="header-nav">
                             <li><a href="#">Мероприятия</a></li>
@@ -80,7 +80,7 @@
                     <div class="events-wrap events-wrap_endurance">
                         <div class="events-gradient events-gradient_endurance">
                             <p class="events-date">29.06 - 4.07</p>
-                            <h4>Марафон выносливости</h4>
+                            <h4 class="events-title">Марафон выносливости</h4>
                             <a class="events-link-notv" href="#">учавствовать</a>
                             <p class="events-button" href="#">марафон</p>
                         </div>
@@ -88,7 +88,7 @@
                     <div class="events-wrap events-wrap_trainer">
                         <div class="events-gradient events-gradient_trainer">
                             <p class="events-date">9.07</p>
-                            <h4>Как стать тренером?</h4>
+                            <h4 class="events-title">Как стать тренером?</h4>
                             <a class="events-link-notv" href="#">учавствовать</a>
                             <p class="events-button" href="#">вебинар</p>
                          </div>
@@ -96,7 +96,7 @@
                     <div class="events-wrap events-wrap_yoga">
                         <div class="events-gradient events-gradient_yoga">
                             <p class="events-date">15.07</p>
-                            <h4>Йога, как стиль жизни</h4>
+                            <h4 class="events-title">Йога, как стиль жизни</h4>
                             <a class="events-link-notv" href="#">учавствовать</a>
                             <p class="events-button" href="#">вебинар</p>
                         </div>
@@ -277,6 +277,21 @@
             <button class="close-popup"></button>
         </div>
     </div>
-     <script src="main.js"></script>
+    <!-- MODAL MENU -->
+    <div id="modal" class="modal">
+        <a class="modal-image" href="#"></a>
+        <ul class="modal-nav">
+            <li><a href="#">Мероприятия</a></li>
+            <li><a href="#">Расписание</a></li>
+            <li><a href="#">О компании</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="#"><img src="images/in.svg" alt="inst"></a>
+            <a href="#"><img src="images/fb.svg" alt="fb"></a>
+        </div>
+        <button class="burger-close close" onclick="closeModal()"></button>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>

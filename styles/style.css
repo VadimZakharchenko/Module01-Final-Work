@@ -75,6 +75,10 @@ a {
     height: 30px;
 }
 
+.header-burger {
+    display: none;
+}
+
 .header-nav {
     display: flex;
     list-style-type: none;
@@ -976,13 +980,344 @@ input:focus {
     height: 24px;
 }
 
+/* MODAL MENU */
+
+.burger {
+    width: 29px;
+    height: 22px;
+    background-image: url(../images/burger.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    top: 3vh;
+    left: 30vh;
+    position: absolute;
+}
+#modal {
+    background-color: #F3F3F3;
+    box-shadow: 0px 30px 70px rgba(43, 53, 65, .7);
+    position: absolute;
+    top: -500px;
+    left: 0;
+    right: 0;
+    padding: 32px 10px 16px 10px;
+    box-sizing:border-box;
+    z-index: 10;
+    transition: 0.4s;
+}
+
+.modal-image {
+    display: block;
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 78px;
+    height: 24px;
+    margin-bottom: 50px;
+}
+
+#modal .header-nav {
+    flex-direction: column;
+    gap: 0;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 40.5px;
+    margin-bottom: 40px;
+}
+#modal li a {
+    font-size: 16px;
+}
+#modal li:not(:last-child):after {
+    content:'';
+    border-bottom: 1px solid #2B3541;
+    display: block;
+    margin-top: 19px;
+    margin-bottom: 20px;
+    opacity: .2;
+}
+.close {
+    background-image: url(../images/close-burger.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    background-size: contain;
+}
+
+.close:hover {
+    background-image: url(../images/close-red.svg);
+}
+
+.burger-close {
+    width: 20px;
+    height: 19px;
+    top: 30px;
+    right: 8px;
+}
+#modal .social-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    gap: 20px;
+}
+
 /* ADAPTIV */
-@media (max-width: 1495px) {
+@media (max-width: 1500px) {
     .bg-img {
-        right: 30px;
+        right: 20px;
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1276px) {
+    .bg {
+        right: -45px;
+        max-width: 720px;
+    }
+
+    .banner-content {
+        padding-top: 215px;
+    }
+
+    .banner-title {
+        font-size: 31px;
+        max-width: 460px;
+    }
+
+    .banner-subtitle {
+        font-size: 30px;
+        margin-bottom: 10px
+    }
+
+    .banner-box {
+        margin-left: -18px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 31vh;
+    }
+
+    .banner-text {
+        font-size: 16px;
+        margin: 0;
+        margin-left: 81px;
+    }
+
+    .banner-link {
+        font-size: 14px;
+        margin-left: 93px;
+        padding: 16px 38px;
+    }
+
+    .banner-arrow {
+        margin-top: 139px;
+    }
+
+    .bg-gradient-left {
+        flex-basis: 50%;
+        height: 690px;
+    }
+
+    .bg-img {
+        height: 650px;
+        right: 33px;
+    }
+
+    .events {
+        height: 555px;
+    }
+
+    .grid-item:nth-child(4) .grid-description {
+        max-height: 87px;
+    }
+
+    .company-box {
+        gap: 0;
+    }
+
+    .popup-title {
+        width: 37vh;
+    }
+}
+
+@media (max-width: 1000px) {
+    .banner {
+        margin-bottom: 100px;
+    }
+
+    .banner-title {
+        font-size: 26px;
+        max-width: 350px;
+    }
+
+    .banner-subtitle {
+        font-size: 26px;
+        margin-top: 35px;
+    }
+
+    .banner-box {
+        max-width: 27vh;
+    }
+
+    .banner-text {
+        font-size: 13px;
+    }
+
+    .banner-link {
+        font-size: 10px;
+        margin-left: 79px;
+        padding: 14px 32px;
+        width: 11vh;
+    }
+
+    .banner-arrow {
+        margin-top: 118px;
+    }
+
+    .banner-content {
+        padding-top: 160px;
+    }
+
+    .bg {
+        max-width: 492px;
+    }
+
+    .bg-img {
+        height: 533px;
+        right: 35px;
+    }
+
+    .bg-gradient-left {
+        flex-basis: 44%;
+        height: 576px;
+    }
+
+    .menu-events h3 {
+        font-size: 35px;
+    }
+
+    .events {
+        height: 400px;
+        margin-bottom: 85px;
+    }
+
+    .events-date {
+        font-size: 14px;
+    }
+
+    .events-title {
+        font-size: 18px;
+    }
+
+    .events-gradient h4 {
+        margin: 0 20px 27px 31px;
+    }
+
+    .events-link-notv {
+        font-size: 10px;
+        padding: 17px 25px;
+        margin-left: 23px;
+    }
+
+    .events-button {
+        font-size: 12px;
+    }
+
+    .training-header h3 {
+        font-size: 28px;
+    }
+
+    .training-header {
+        gap: 393px;
+    }
+
+    .training-header-text {
+        font-size: 22px;
+    }
+
+    .grid-data,
+    .grid-title {
+        font-size: 16px;
+    }
+
+    .grid-description {
+        font-size: 14px;
+    }
+
+    .subscribe {
+        margin-bottom: 100px;
+    }
+
+    .company-box {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .company-box-item {
+        flex: 0 0 255px;
+    }
+
+    .company-box-item:nth-child(2) {
+        flex: 0 0 255px;
+    }
     
+    .company-box-item:nth-child(3) {
+        flex: 0 0 255px;
+    }
+    
+    .company-box-item:last-child {
+        flex: 0 0 255px;
+    }
+
+    .company {
+        margin-bottom: 85px;
+    }
+
+    .footer-logo {
+        flex-basis: 27.1%;
+    }
+
+    .footer-header-nav {
+        gap: 35px;
+    }
+
+    .footer-socials {
+        gap: 10px;
+    }
+
+    .footer-mail {
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 800px) {
+    .header-burger {
+        display: block;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .modal-nav {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        padding-left: 0;
+        gap: 5px;
+        margin-bottom: 40px;
+    }
+    
+    .modal-nav a {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #2B3541;
+    }
 }
