@@ -1,4 +1,4 @@
-//Smoth Scroll
+/*Smoth Scroll
 const links = document.querySelectorAll(".banner-arrow");
 
 for (const link of links) {
@@ -12,7 +12,7 @@ function clickHandler(e) {
    document.querySelector(href).scrollIntoView({
        behavior: "smooth"
    });
-}
+}*/
 
 // Button Up
  
