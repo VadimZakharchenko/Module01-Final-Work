@@ -1,5 +1,5 @@
-/*Smoth Scroll
-const links = document.querySelectorAll(".banner-arrow");
+//Smoth Scroll
+const links = document.querySelectorAll(".banner-arrow, .banner-link");
 
 for (const link of links) {
    link.addEventListener("click", clickHandler);
@@ -12,7 +12,7 @@ function clickHandler(e) {
    document.querySelector(href).scrollIntoView({
        behavior: "smooth"
    });
-}*/
+}
 
 // Button Up
  
@@ -43,7 +43,7 @@ function clickHandler(e) {
 // POPUP
 let popupBg = document.querySelector('.popup-bg'); // Фон попап окна
 let popup = document.querySelector('.popup'); // Само окно
-let openPopupButtons = document.querySelectorAll('.events-link-notv'); // Кнопки для показа окна
+let openPopupButtons = document.querySelectorAll('.open-popup'); // Кнопки для показа окна
 let closePopupButton = document.querySelector('.close-popup'); // Кнопка для скрытия окна
 
 openPopupButtons.forEach((button) => { // Перебираем все кнопки
