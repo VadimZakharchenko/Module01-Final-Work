@@ -2,7 +2,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: #2B3541;
-    overflow-x: hidden;
 }
 
 h1 {
@@ -73,6 +72,11 @@ a {
     background-repeat: no-repeat;
     width: 97px;
     height: 30px;
+    transition: .2s linear;
+}
+
+.logo-image:hover {
+    transform: scale(1.02);
 }
 
 .header-burger {
@@ -92,6 +96,7 @@ a {
     font-size: 18px;
     line-height: 150%;
     color: #2B3541;
+    transition: .2s linear;
 }
 
 .header-nav a:hover {
@@ -110,10 +115,11 @@ a {
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
+    transition: .2s linear;
 }
 
 .socials-inst:hover {
-    transform: scale(1.2666);
+    transform: scale(1.1);
 }
 
 .socials-fb {
@@ -122,10 +128,11 @@ a {
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
+    transition: .2s linear;
 }
 
 .socials-fb:hover {
-    transform: scale(1.2666);
+    transform: scale(1.1);
 }
 
 /* BANNER */
@@ -168,7 +175,7 @@ a {
     padding: 22px 32px;
     background: #FBF138;
     box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
-    transition: 0.2s;
+    transition: .2s linear;
     margin-left: 92px;
 }
 
@@ -189,11 +196,11 @@ a {
     margin-top: 200px;
     cursor: pointer;
     outline: none;
-    transition: 0.8s;
+    transition: .2s linear;
 }
 
 .banner-arrow:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 .bg {
@@ -268,7 +275,7 @@ a {
    position: absolute;
    width: 100%;
    height: 100%;
-   transition: .2s;
+   transition: .2s linear;
 }
 
 .events-gradient:hover {
@@ -295,6 +302,7 @@ a {
     text-transform: uppercase;
     padding: 20px 37px;
     margin-left: 35px;
+    transition: .2s linear;
 }
 
 .events-gradient:hover .events-link-notv {
@@ -313,6 +321,7 @@ a {
     padding: 11px 21px;
     text-decoration: none;
     opacity: 1;
+    transition: .2s linear;
 }
 
 .events-gradient:hover .events-button {
@@ -353,6 +362,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     padding: 20px 31px 0;
+    transition: .2s linear;
 }
 
 .grid-item:hover {
@@ -415,17 +425,17 @@ a {
     overflow: hidden;
     max-height: 0;
     transition: 0.3s linear;
- }
+}
 
- .grid-box:hover .grid-description {
+.grid-box:hover .grid-description {
     max-height: 500px;
- }
+}
 
- .grid-item:nth-child(1) .grid-title {
+.grid-item:nth-child(1) .grid-title {
     margin: 34px 0 0 0;
- }
+}
 
- .grid-item:nth-child(2) .grid-title {
+.grid-item:nth-child(2) .grid-title {
     margin: 34px 0 0 0;
 }
 
@@ -499,7 +509,8 @@ a {
 }
 
 .subscribe-email {
-    padding: 22px 120px 22px 22px;
+    width: 100%;
+    padding: 21px 21px 21px 21px;
     font-size: 18px;
     border: none;
     margin: 0 auto;
@@ -635,7 +646,7 @@ a {
     color: #8F949A;
     text-decoration-line: none;
     border-bottom: 1px #8F949A solid;
-    transition: .2s ease color, .2s ease border-bottom;
+    transition: .2s ease color, .2s ease;
 }
 
 .subscribe-label-text a:hover {
@@ -685,6 +696,7 @@ a {
     padding: 20px 55px;
     text-transform: uppercase;
     cursor: pointer;
+    transition: .2s linear;
 }
 
 .company-wrapper-btn:hover {
@@ -796,6 +808,7 @@ a {
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
+    transition: .2s linear;
 }
 
 .footer-mail {
@@ -838,10 +851,11 @@ a {
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
+    transition: .2s linear;
 }
 
 .footer-socials-inst:hover {
-    transform: scale(1.2666);
+    transform: scale(1.1);
 }
 
 .footer-socials-fb {
@@ -850,10 +864,11 @@ a {
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
+    transition: .2s linear;
 }
 
 .footer-socials-fb:hover {
-    transform: scale(1.2666);
+    transform: scale(1.1);
 }
 
 .footer-wrapper {
@@ -866,6 +881,7 @@ a {
 .footer-link {
     font-size: 14px;
     color: rgba(43, 53, 65, .3);
+    transition: .2s linear;
 }
  
 .footer-link:hover {
@@ -885,11 +901,11 @@ a {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    transition: 0.8s;
+    transition: .2s linear;
 }
  
 .button-up:hover {
-    transform: scale(1.26);
+    transform: scale(1.1);
 }
  
 .button-up.hidden {
@@ -911,6 +927,7 @@ a {
     opacity: 0; 
     pointer-events: none;
     transition: 0.5s all;
+    z-index: 1;
 }
 
 .popup-bg.active {
@@ -1021,11 +1038,12 @@ input:focus {
     height: 20px;
     top: 30px;
     right: 30px;
+    transition: .2s linear;
 }
 
 .close-popup:hover {
-    width: 21px;
-    height: 21px;
+    width: 19.5px;
+    height: 19.5px;
 }
 
 /* MODAL MENU */
@@ -1098,10 +1116,6 @@ input:focus {
     background-size: contain;
 }
 
-.close:hover {
-    background-image: url(../images/close-red.svg);
-}
-
 .burger-close {
     width: 20px;
     height: 19px;
@@ -1117,15 +1131,20 @@ input:focus {
 
 /* ADAPTIV */
 @media (max-width: 1500px) {
+    .bg {
+        right: -59px;
+    }
+
     .bg-img {
-        right: 20px;
+        right: 0;
     }
 }
 
 @media (max-width: 1276px) {
+    
     .bg {
-        right: -45px;
-        max-width: 720px;
+        right: 0;
+        max-width: 764px;
     }
 
     .banner-content {
@@ -1168,13 +1187,12 @@ input:focus {
     }
 
     .bg-gradient-left {
-        flex-basis: 50%;
         height: 690px;
     }
 
     .bg-img {
         height: 631px;
-        right: 33px;
+        right: 0;
         top: 60px;
     }
 
@@ -1256,12 +1274,11 @@ input:focus {
 
     .bg-img {
         height: 420px;
-        right: 35px;
+        right: 0;
         top: 18px;
     }
 
     .bg-gradient-left {
-        flex-basis: 49%;
         height: 438px;
     }
 
@@ -1438,16 +1455,16 @@ input:focus {
         max-width: 100%;
         left: -5px;
         gap: 10px;
-        height: 80.4vw;
+        height: 58.4vw;
     }
 
     .bg-gradient-left +
     .bg-gradient-right +
     .bg-img {
         width: 100%;
-        height: 89%;
+        height: 100%;
         -o-object-fit: contain;
-           object-fit: fill;
+           object-fit: contain;
         bottom: 0;
     }
 
@@ -1590,6 +1607,10 @@ input:focus {
     .footer-wrapper {
         flex-direction: column;
     }
+
+    .button-up {
+        display: none;
+    }
 }
 
 @media (max-width: 690px) {
@@ -1715,7 +1736,20 @@ input:focus {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 500px) { 
+    .bg {
+        height: 85.4vw;
+    }
+
+    .bg-gradient-left +
+    .bg-gradient-right +
+    .bg-img {
+        height: 89%;
+        -o-object-fit: contain;
+           object-fit: fill;
+    }
+
+
     .events {
         height: 171vw;
         grid-template-rows: 48% 48%;
@@ -1732,8 +1766,21 @@ input:focus {
         padding-top: 31px;
     }
 
+    .logo-image {
+        width: 78px;
+        height: 24px;
+        background-size: contain;
+    }  
+
     .socials {
         gap: 10px;
+    }
+
+    .footer-socials-inst,
+    .footer-socials-fb {
+        width: 26px;
+        height: 26px;
+        background-size: contain;
     }
 
     .banner {
@@ -1851,6 +1898,12 @@ input:focus {
         margin-bottom: 43px;
     }
 
+    .footer-logo-image {
+        width: 78px;
+        height: 24px;
+        background-size: contain;
+    }  
+
     .footer-header-nav {
         margin: 0;
         gap: 44px;
@@ -1867,6 +1920,13 @@ input:focus {
     .footer-socials {
         gap: 158px;
         align-items: center;
+    }
+
+    .footer-socials-inst,
+    .footer-socials-fb {
+        width: 26px;
+        height: 26px;
+        background-size: contain;
     }
 
     .media {
