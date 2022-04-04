@@ -1228,6 +1228,11 @@ input:focus {
     .popup-title {
         width: 37vh;
     }
+
+    .popup-title::before {
+        bottom: 80px;
+        left: 10px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -1734,6 +1739,29 @@ input:focus {
         gap: 20px;
         align-items: center;
     }
+
+    .popup {
+        height: 515px;
+    }
+
+    .popup-title {
+        font-size: 23px;
+    }
+
+    .popup-title::before {
+        bottom: 42px;
+        left: 39px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .popup-text {
+        font-size: 14px;
+    }
+
+    .form-popup {
+        max-width: 85vw;
+    }
 }
 
 @media (max-width: 500px) { 
@@ -1758,6 +1786,10 @@ input:focus {
 
     .events-wrap__yoga {
         height: 80vw;
+    }
+
+    .close-popup {
+        right: 80px;
     }
 }
 
@@ -1955,4 +1987,129 @@ input:focus {
     .footer-item, .footer-link {
         font-size: 10px;
     }
+
+    .popup-title {
+        font-size: 18px;
+    }
+
+    .close-popup {
+        right: 125px;
+    }
+}
+
+@media (max-width: 360px) {
+    .banner-title {
+        font-size: 21px;
+    }
+
+    .banner-subtitle {
+        margin-top: 28px;
+        font-size: 21px;
+    }
+
+    .banner-link {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .banner {
+        margin-bottom: 60px;
+    }
+
+    .menu-events h3 {
+        font-size: 22px;
+    }
+
+    .events-date {
+        font-size: 10px;
+    }
+
+    .events-gradient h4 {
+        font-size: 13px;
+        padding-left: 15px;
+        padding-bottom: 0;
+    }
+
+    .events-button {
+        font-size: 10px;
+    }
+
+    .events {
+        margin-bottom: 70px;
+    }
+
+    .training-header h3 {
+        font-size: 23px;
+    }
+
+    .grid-item {
+        padding: 15px 10px 0;
+    }
+
+    .grid-data, .grid-title {
+        font-size: 13px;
+    }
+
+    .subscribe-title {
+        font-size: 24px;
+    }
+
+    .subscribe-title::before {
+        left: -9px;
+        height: 29px;
+        width: 29px;
+    }
+
+    .subscribe-title {
+        padding-bottom: 40px;
+    }
+
+    .subscribe-form {
+        margin-left: 0;
+    }
+
+    .subscribe-email::placeholder {
+        font-size: 15px;
+    }
+
+    .subscribe-label {
+        margin-left: 0;
+    }
+
+    .subscribe-btn-mobile {
+        font-size: 13px;
+    }
+
+    .subscribe {
+        margin-bottom: 60px;
+    }
+
+    .company-wrapper-title {
+        font-size: 24px;
+    }
+
+    .training-header-text,
+    .company-wrapper-text,
+    .company-box-title,
+    .company-box-para,
+    .company-wrapper-btn__mob {
+        font-size: 14px;
+    }
+
+    .footer-logo {
+        margin-bottom: 35px;
+    }
+
+    .footer-header-nav {
+        gap: 20px;
+    }
+
+    .footer-socials {
+        gap: 96px;
+    }
+
+    .footer-header {
+        padding-bottom: 30px;
+    }
+
 }
